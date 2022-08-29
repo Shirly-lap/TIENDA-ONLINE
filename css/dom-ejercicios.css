@@ -1,0 +1,95 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+html,
+body {
+  scroll-behavior: smooth;
+}
+  /* Cabecera*/
+  .cabecera {
+    padding: 1rem;
+    background-color: #f7df1e;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: sticky;
+    top: 0;
+    z-index: 999;
+  }
+  
+  .titulo {
+    font-family: sans-serif;
+  }
+
+  .subtitulo{
+    text-align: center;
+  }
+  /* Contenedor general*/
+  .contenedor-general {
+    display: flex;
+    margin-top: 6rem;
+  }
+  
+  /* Contenedor Secciones*/
+  
+  .contenedor-secciones-desktop {
+    width: 80%;
+    transition: width 0.3s ease;
+  }
+  
+  .contenedor-secciones-mobile {
+    width: 100%;
+  }
+  
+  
+  /* Seccion 10 Filtro de busqueda  margin-left: 8rem;
+    
+    border: 1px dotted rgb(0, 0, 0);
+    border-radius: 3px;
+   -webkit-appearance: none;
+    
+     */
+
+  .card-filter{
+    width: 50%;
+    float: center;
+    padding: 6px;
+    margin-top: 8px;
+    margin-left: 25%;
+    font-size: 17px;
+    border-radius: 30px;
+  
+  }
+
+  .cards {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    
+  }
+  
+  .card {
+    background-color: #222;
+    color: #000000;
+    transition: all 0.5s ease-out;
+    margin: 0.5rem;
+  }
+  .card img {
+    width: 100%;
+    height: auto;
+  }
+  
+  .card figcaption {
+    padding: 1rem;
+  }
+  
+  .filter {
+    /* display: none; */
+    visibility: hidden;
+    opacity: 0;
+    order: 1;
+    
+  }
+ 
+  
